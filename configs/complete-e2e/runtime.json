@@ -1,0 +1,13 @@
+{
+  "schema": "hurc-complete-e2e-runtime/v1",
+  "description": "CLI adapter so CJ-Hurc/Kimi-K3 compile is not an empty or dishonest 0-row universe. Dual-origin first-party kimi-k3 CLI surfaces over LICENSE/README/assets/tech-report.",
+  "adapters": [
+    {
+      "id": "kimi-k3-cli-runtime",
+      "kind": "cli",
+      "surface_kind": "cli",
+      "timeout_sec": 15,
+      "argv": ["bash", "configs/complete-e2e/list-runtime-clis.sh"]
+    }
+  ]
+}
