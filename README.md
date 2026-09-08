@@ -668,3 +668,24 @@ Both the code repository and the model weights are released under the [Kimi K3 L
 ## 8. Contact Us
 
 If you have any questions, please reach out at [support@moonshot.ai](mailto:support@moonshot.ai).
+
+---
+
+## First-party CE2E surfaces (CJ-Hurc)
+
+This fork ships a small CLI under `devtools/kimi-k3/run.sh` so occupancy,
+runtime discovery, and complete-e2e can certify an honest product surface over
+LICENSE / README / assets / tech report rather than an empty universe. Root
+`run.sh` is fail-closed unless `KIMI_K3_ALLOWED=yes`.
+
+```bash
+bash devtools/kimi-k3/run.sh status
+bash devtools/kimi-k3/run.sh --help
+bash devtools/kimi-k3/run.sh config
+bash devtools/kimi-k3/run.sh validate
+```
+
+Runtime discovery adapter: `configs/complete-e2e/runtime.json` →
+`configs/complete-e2e/list-runtime-clis.sh`.
+
+Universal repository occupancy: `scripts/complete-e2e/prove/{entity,repository}.py`.
